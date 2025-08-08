@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class D16
+{
+	static Scanner s1=new Scanner(System.in);
+	static D16 obj=new D16();
+	int findbiggest(int a ,int b ,int c)
+	{
+		if(a>b && a>c)
+		return a;
+		else if(b>c && b>a)
+		return b;
+		else
+		return c;
+	}
+}
+class Test
+{
+	static Scanner s2=new Scanner(System.in);
+	System.out.print(D16.obj.findbiggest(s2.nextInt(),s2.nextInt(),s2.nextInt()));
+}
